@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  min-height: 400px;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app_form {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
+  padding: 2rem;
+  width: 450px;
+}
+
+.app_form-logo {
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: auto;
+}
+
+.app_form h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ef5b0c;
+  margin-bottom: 2rem;
+}
+
+.app_form input {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #54bab9;
+  outline: none;
+}
+
+.app_form input:focus {
+  border: 2px solid #59ce8f;
+}
+
+.app_form button {
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #54bab9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/*will use this css later*/
+#btn-red {
+  background-color: #eb1d36;
+}
+
+.app_qr-code {
+  width: 450px;
+  margin: 3rem 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-left: 2px solid #ef5b0c;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app_qr-code img {
+  max-height: 400px;
+  transition: all 0.3s ease;
 }
